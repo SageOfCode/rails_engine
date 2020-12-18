@@ -9,7 +9,6 @@ class Api::V1::ItemsController < ApplicationController
     end 
   end
 
-  
   def show
     render json: ItemSerializer.new(Item.find(params[:id]))
   end
