@@ -15,5 +15,3 @@ Rails.application.routes.draw do
     end
   end
 end
-
-# get '/api/v1/merchants/find_all', to: 'merchants/search#find_all'
