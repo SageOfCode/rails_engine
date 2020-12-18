@@ -1,7 +1,6 @@
 class Api::V1::ItemsController < ApplicationController
 
   def index 
-    # require 'pry'; binding.pry
     if params[:merchant_id]
       items = Item.where(merchant_id: params[:merchant_id])
       render json: ItemSerializer.new(items)
